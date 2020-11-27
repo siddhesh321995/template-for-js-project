@@ -1,0 +1,46 @@
+{
+  "name": "template-for-js-project",
+  "version": "1.0.0",
+  "description": "This is a sample template for your javascript app, it contains predefined Unit testing with Mocha, travis for build info, Automatic Documentation with documentation npm library, Github workflow files, gitignore, Read me and many more",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "npm run babel && npm run browserify && npm run uglifyjs",
+    "babel": "babel src -d dist",
+    "browserify": "browserify dist/index.js -o dist/template.js",
+    "uglifyjs": "uglifyjs --compress --mangle --output dist/template.min.js -- dist/template.js",
+    "doc": "npm run documentmd && npm run documenthtml",
+    "documentmd": "documentation build src/index.js -f md -o DOCUMENTATION.md",
+    "documenthtml": "documentation build src/index.js -f html -o docs"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<USERNAME>/<REPO_NAME>.git"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "DataStructure",
+    "Trees",
+    "Binary",
+    "Trees"
+  ],
+  "author": "Siddhesh Kulkarni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<USERNAME>/<REPO_NAME>/issues"
+  },
+  "homepage": "https://github.com/<USERNAME>/<REPO_NAME>#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "browserify": "^17.0.0",
+    "mocha": "^8.2.1",
+    "should": "^13.2.3",
+    "uglify-js": "^3.12.0"
+  }
+}

@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<USERNAME>/<REPO_NAME>.git"
+    "url": "git+https://github.com/siddhesh321995/template-for-js-project.git"
   },
   "keywords": [
     "Node",
@@ -32,9 +32,9 @@
   "author": "Siddhesh Kulkarni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/<USERNAME>/<REPO_NAME>/issues"
+    "url": "https://github.com/siddhesh321995/template-for-js-project/issues"
   },
-  "homepage": "https://github.com/<USERNAME>/<REPO_NAME>#readme",
+  "homepage": "https://github.com/siddhesh321995/template-for-js-project#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",

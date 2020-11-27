@@ -13,5 +13,6 @@ describe('template-for-js-project', () => {
       out.doSomething();
       done();
     });
+    // Add your Unit tests here..
   });
 });
